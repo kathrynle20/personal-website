@@ -1,0 +1,13 @@
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-link {
+  padding: 0.2rem 0.4rem;
+  margin: 0.5rem;
+  border: solid rgb(82, 58, 117) 1px;
+  border-radius: 10px;
+  /* background-color: rgb(203, 197, 225); */
+  background-color: rgb(82, 58, 117);
+}

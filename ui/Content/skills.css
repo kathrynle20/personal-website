@@ -1,0 +1,32 @@
+.skills-grid {
+  display: grid;
+  row-gap: 1.5rem;
+  column-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.skill-container {
+  border: solid white 2px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.skill-container:hover {
+  color: rgb(190, 139, 214);
+  border-color: rgb(190, 139, 214);
+}
+
+.skill-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.related-work {
+  display: flex;
+  flex-direction: row;
+}
+
+svg {
+  width: 1.5rem;
+}

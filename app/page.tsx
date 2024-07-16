@@ -1,95 +1,48 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import "./page.module.css";
+import "@/app/globals.css";
+import Navbar from "@/ui/navbar";
+import Section from "@/ui/section";
+import Skills from "@/ui/Content/skills";
+import Experience from "@/ui/Content/experience";
+import LogoImg from "@/ui/logo.png";
+import Link from "next/link";
 
 export default function Home() {
+  // const sections = [
+  //   { title: "Home", name: "home" },
+  //   { title: "About Me", name: "about-me" },
+  //   { title: "Education", name: "education" },
+  //   { title: "Experience", name: "experience" },
+  //   { title: "Skills", name: "skills" },
+  //   { title: "Connect", name: "connect" },
+  // ];
+  const skills = { title: "Skills", name: "skills" };
+  const experience = { title: "Experience", name: "experience" };
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div>
+      <div className="main-header">
+        <Link className="logo-img" href="#home">
+          <Image src={LogoImg} alt="logo"></Image>
+        </Link>
+        <Navbar></Navbar>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div>
+        <Section
+          id={experience.name}
+          title={experience.title}
+          children={<Experience></Experience>}
+        ></Section>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>BLAH BLAH BLAH HEHE.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div>
+        <Section
+          id={skills.name}
+          title={skills.title}
+          children={<Skills></Skills>}
+        ></Section>
       </div>
-    </main>
+    </div>
   );
 }
