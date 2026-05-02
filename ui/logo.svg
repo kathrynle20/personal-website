@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
+  <!-- < -->
+  <text x="2" y="30" font-family="monospace" font-size="28" font-weight="600" fill="#1a1a1a">&lt;</text>
+  <!-- k with a small heart dot -->
+  <text x="25" y="30" font-family="monospace" font-size="28" font-weight="600" fill="#1a1a1a">k</text>
+  <!-- heart -->
+  <path d="M52 10 C52 7, 56 5, 58 8 C60 5, 64 7, 64 10 C64 14, 58 18, 58 18 C58 18, 52 14, 52 10Z" fill="#e8a99a"/>
+  <!-- /> -->
+  <text x="66" y="30" font-family="monospace" font-size="28" font-weight="600" fill="#1a1a1a">/&gt;</text>
+</svg>
