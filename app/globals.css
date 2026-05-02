@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27)),
-    url('/pastel-lilac-apricot-pink-pattern-260nw-2451191563.webp');
+    url('/pastel-lilac-apricot-pink-pattern-260nw-2451191563.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -51,7 +51,7 @@ a {
 }
 
 .nav-name {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .hamburger {
@@ -154,7 +154,7 @@ a {
 .home-heading {
   font-family: var(--font-heading);
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 450;
   margin-bottom: 28px;
   line-height: 1.2;
   text-align: center;
